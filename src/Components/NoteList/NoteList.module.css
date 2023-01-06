@@ -1,0 +1,18 @@
+.listCardContainer {
+  display: flex;
+  gap: 0.5rem;
+}
+.noteCard {
+  background-color: blueviolet;
+  color: white;
+  min-width: 15rem;
+  padding: 1rem 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  text-align: left;
+}
+.Svg {
+  width: 2rem;
+  height: 2rem;
+}
