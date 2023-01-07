@@ -7,11 +7,17 @@ import CloseSvg from "../../Asset/Close.svg";
 export const NoteList = () => {
   const dispatch = useDispatch();
   const items = useSelector((state) => state.todos.items);
+  const searchText = useSelector((state) => state.todos.search);
 
-  console.log(items);
+  const filtered = items.filter((item) => {
+    return Object.keys(item).some((key) =>
+      item[key].toString().toLowerCase().includes(searchText.toLowerCase())
+    );
+  });
+
   return (
     <div className={styles.listCardContainer}>
-      {items.map((item) => (
+      {filtered.map((item) => (
         <>
           {" "}
           <div

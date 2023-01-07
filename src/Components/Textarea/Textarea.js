@@ -10,7 +10,7 @@ export const Textarea = () => {
   const dispatch = useDispatch();
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (note.length >= 5) {
+    if (note.length >= 5 && color) {
       dispatch(addNewNote({ id: nanoid(), note, color }));
       setNote("");
       setColor("");
