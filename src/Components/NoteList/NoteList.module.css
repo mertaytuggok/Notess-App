@@ -3,16 +3,20 @@
   gap: 0.5rem;
 }
 .noteCard {
-  background-color: blueviolet;
   color: white;
   min-width: 15rem;
   padding: 1rem 0.5rem;
-  width: 100%;
+  max-width: 8rem;
+  height: 100%;
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   text-align: left;
+  white-space: normal;
 }
-.Svg {
-  width: 2rem;
-  height: 2rem;
+
+.deleteButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
 }
