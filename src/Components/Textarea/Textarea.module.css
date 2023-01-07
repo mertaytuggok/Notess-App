@@ -96,3 +96,18 @@
   padding: 0.2rem 1rem;
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .Textarea {
+    max-width: 45rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Textarea {
+    max-width: 20rem;
+  }
+  .groupButtons {
+    padding: 0 1rem 1rem;
+  }
+}

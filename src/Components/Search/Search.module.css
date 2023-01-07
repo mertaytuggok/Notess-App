@@ -10,3 +10,8 @@
 .Search:focus {
   outline: none;
 }
+@media screen and (max-width: 425px) {
+  .Search {
+    padding: 0.5rem;
+  }
+}

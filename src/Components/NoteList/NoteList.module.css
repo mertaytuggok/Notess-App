@@ -1,6 +1,12 @@
 .listCardContainer {
-  display: flex;
-  gap: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  justify-content: center;
+  align-items: center;
+  flex-wrap: initial;
+  height: fit-content;
+  gap: 3rem;
 }
 .noteCard {
   color: white;
@@ -19,4 +25,17 @@
   border: none;
   cursor: pointer;
   color: white;
+}
+@media screen and (max-width: 768px) {
+  .listCardContainer {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(1, auto);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .listCardContainer {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(1, auto);
+  }
 }
